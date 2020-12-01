@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+html { box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit;}
+.clear {clear:both;}
+
+* {margin:0; padding:0}
+body {height:100%;}
+p{ text-align: justify; text-indent: 50px;}
+
+					/*********** Estilizando(menu/submenu) - Todas Pages***********/
+
+.nav {width:100%; height:80px; background:#575c62; position:relative; text-shadow:1px 1px 1px #666; border-top: 10px #cc9933 solid; border-bottom: 10px #cc9933 solid;}
+.menu {	list-style:none; position:relative; z-index:2;}
+.menu li, .submenu li {display:inline-block; float:left; position:relative;}
+.menu > li {border-radius: 10px 10px 0 0;}
+.submenu {border-radius: 0 0 10px 10px;}
+.menu li:hover, .menu li:hover ul{display:block; background:#999;}
+.menu li a {font:14px Verdana, Geneva, sans-serif; color:#FFF; display:block; padding:0 20px; line-height:64px; text-decoration:none; font-weight:bold;}
+#topo{width:100%; text-align:center;}
+
+								/*********** Submenu - Todas Pages ***********/
+
+.submenu {display:none; position:absolute; top:64px; left:0; border: 1px #CCC solid;}
+.submenu li {float:left; display:block; width:310px; border-bottom: 1px #CCC dotted;}
+.submenu li:last-child{border:0;}
+.submenu li a {line-height:3em}
+.submenu li:hover a {background:#eee;}
+
+							/*********** Parte acima do menu - Todas Pages***********/
+
+#logo{width: 20%; float:left;}
+#logo img{margin:10px; width:80%;}
+#frase{width:60%; float:left; text-align:center; margin-top:50px;}
+#frase h1, frase h2{ margin:0; padding:0;}
+#frase h1{color:#CE0000;}
+#frase h2{color:#666;}
+#tel{width: 20%; float:right; position:relative;}
+#tel p {position:absolute; top:20px; right:10px; color:#666; font-weight:bold;}
+#tel img {margin-right:10px;}
+
+
+							/*********** Menu Lateral - Nossos Produtos***********/ 
+							
+
+#menu2 a {color:#FFF;}
+#menu2 {margin: 0px;padding: 15px;float: left; height:642px; background:#575c62; border:6px outset #cc9933;	margin-bottom:2px; width:18%; min-width:205px;}
+#menu2 ul li {margin: 0; padding: 0px;text-align: left;	list-style-type: none;}
+#menu2 a:link {font:14px Verdana, Geneva, sans-serif; color:#FFF; display:block; padding:0 20px; line-height: 70px; text-decoration:none; font-weight:bold; background: #575c62;font-weight: bold;text-decoration: none; display: block;}
+#menu2 a:hover {display:block; background:#999;	color: #CE0000;}
+#menu2 > li {border-radius: 10px 10px 0 0;}
+
+									/***********  Filter container - Nossos Produtos ***********/
+									
+#filter-container {width: 82%; float:right; text-align:center; padding-top:5%;}
+#filter-container figure {width: 400px; height: 400px; display:inline-block; border:1px #CCC solid; margin:0% 2.5% 5% 2.5%; padding:20px;}
+#filter-container figure .thumb img {width: 100%;-webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease;  -o-transition: all 0.3s ease; transition: all 0.3s ease; border-bottom: 4px solid #575c62; margin:20px 0; padding:0 0 20px 0;}
+#filter-container figure .thumb:hover img {opacity: 0.2;}
+#filter-container figcaption {padding:10px; text-align:center;}
+#filter-container figcaption .heading{ padding:10px 0; color:#CC0000; font-size:20px;}
+#filter-container figcaption .paragrafo{line-height:1.6em; color:#999; font-weight:bold; display:flex; text-indent:0px; text-align:center !important;}
+
+
+
+									/*********** Banner 1 - Index ***********/
+									
+									
+#banner{margin-top:0px;	width:800px; height: 474px;}
+img{max-width: 100%; margin-top:0px; vertical-align: middle;}
+.slide{float: left; width: 100%; background:  #ccc; position: absolute; z-index:1;}
+.slide_nav {position: absolute; width: 100%; left: 0; top:100%; background: #575c62; border-top: 10px #cc9933 solid;}
+.slide_nav_item {position: absolute; padding: 15px 20px; border-radius: 50%; background: #CCC; z-index: 99; color: #575c62;}
+.slide_nav_item:hover{background: #999; color: #575c62; cursor: pointer;}
+.slide_nav_item.b {float: left; left: 30px; margin-top: -250px;}
+.slide_nav_item.g {float: right; right: 30px; margin-top: -250px;}
+.slide_item {display: none;}
+.slide_item.first{display: block;}
+.slide_pager{position: absolute; top: 10px; left:0; width: 100%; text-align: center;}
+.slide_pager span{padding: 1px 10px; border: 3px #999 solid; background: #e3e3e3; color: #000; border-radius: 50%;cursor: pointer;}
+.slide_pager span:hover{background: #ccc;}
+.slide_pager .active{background: #575c62;}
+
+
+										/*********** Botão Voltar ***********/
+										
+#voltar{background:#FFF; position:fixed; padding:5px; bottom:10px; right:10px; cursor:pointer; border:1px #FFF solid; z-index:100;}
+#voltar:hover{border:1px #2c5774 solid;}
+
+									/*********** Camera Slider -Banner 2- Index***********/
+
+#banner2{height: 400px; width: 100%; background: #ccc;}
+.camera_thumb{border-radius: 50%; width: 50px !important;}
+
+
+                               /****************************  Nossos Serviços - Banner 3 até o Banner 5  ***************************/
+							   
+							   
+							   
+						/*----------Formatação de imagens com legendas-----------*/
+
+figure.foto-legenda {position: relative; border: 8px solid white; box-shadow: 1px 1px 4px black;}
+figure.foto-legenda img {width;100%; height: 100%;}
+figure.foto-legenda figcaption {opacity: 0;position: absolute; top: 0px; background-color: rgba(0,0,0,.4); color: white; width: 100%; height: 100%; padding: 20px; box-sizing: border-box; transition: opacity 1s;}
+figure.foto-legenda:hover figcaption{opacity: 1;}						
+#nossosservicos h1,#nossosservicos h2 {color: #ce0000; text-align:center;}
+#nossosservicos ul {margin-left:25px;}
+
+
+/*------------------------------------------------------------------------------*/
+
+
+									/*********** Busca Categoria  - Index ***********/
+#categorias{width:100%; margin-top:10px;}
+.box{background:#F1F1F1;}
+.categoria{width:14.4%; height:196px; text-align: center; float: left; margin: 2% 0 2% 8.5%; position:relative;}
+.categoria h2{ font-family:Verdana, Geneva, sans-serif; border:1px #F30 solid; padding:5px 2px; line-height:55px; font-weight:100; color:#333;}
+.lupa { position:absolute; opacity: 0.0; background:url(../images/lupa.png); width:100%; height:196px; top:0; left:0;}
+.lupa:hover{opacity:0.7;}
+img.lupa {width:78%; height:95%; position:absolute; top:0; left:0; border:none;}
+.lupa2 {width:60%; height:95%; position:absolute; top:0; left:0; margin:2% 40% 15% 21%; padding:1%; border:none; z-index: 2;}
+img.lupa2 {width:60%; height:95%; position:absolute; top:0; left:0; border:none;}
+#moveis, #quadros, #artes , #luminarias, #porcelanas, #pratas, #vidros, #diversos{ width:30%; float:left; text-align:center; padding:1%; position:relative;}
+#moveis{ margin:1% 0 1% 1%; position:relative;}
+#quadros { margin:1% 38% -3% -8%; position:relative;}
+#artes {margin:1% 1% 1% -45%; position:relative;}
+#luminarias{ margin:1% 1% 1% -22%; position:relative;}
+#porcelanas{margin:1% 0 1% 1%; position:relative;}
+#pratas{margin:1% 38% -3% -8%; position:relative;}
+#vidros{margin:1% 1% 1% -45%; position:relative;}
+#diversos{margin:-1% 1% 1% -22%; position:relative;}
+
+								/*********** Conteúdo - Quem Somos ***********/
+#quemsomos {width:100%; padding: 5%;}
+#quemsomos h1{font-family:Verdana, Geneva, sans-serif; font-size:30px; text-align:center; font-weight:bold; color: #CC0000; 
+width:100%; padding: 0 3%; height: 70px;}
+#quemsomos p {line-height:1.8em; font-family:Verdana, Geneva, sans-serif; font-size:18px; color:#999; text-align:justify; text-indent: 2em; font-weight:normal; margin:20px 0; width:100%}
+#quemsomos ul {list-style-type: square; font-family:Verdana, Geneva, sans-serif; font-size:18px; color:#999; text-indent: 2em; font-weight:normal; margin:15px 0; width:100%; padding-left: 300px; line-height: 1.8em;}
+#quemsomos img {width:10%; float:left; padding-left: 15px; margin:-36px 284px;}
+
+                             /****************************** Formulário  -  Contato  - Todas as Páginas   **************************/	
+
+
+#form_contatos {font-family:Verdana, Geneva, sans-serif; font-size:16px; color:#666;}
+#form_contatos h2{ font-family:Verdana, Geneva, sans-serif; font-size:25px; color:#CC0000;}							
+#form_contatos form {margin:15px;}
+#form_contatos .label, #form_contatos label  {display:block; padding:15px;}								
+#form_contatos input {background:#FFC; padding:10px 15px;}	
+
+
+							/*********** Rodapé - Todas as Páginas ***********/
+							
+#footer {height:100%; background:#FFF; border-top: 10px #cc9933 solid;}
+#logotipo{ width:8%; background:#FFF; position:relative; margin:10px;}
+#contato {font-family:Verdana, Geneva, sans-serif; font-size:45px; color:#444; width:35%; float:left; padding: 0 3%; height:260px; }
+.tel {font-family:Verdana, Geneva, sans-serif; font-size:30px; font-style:normal; color:#999; text-align:left}
+.descricao {text-indent: 0px; font-family:Verdana, Geneva, sans-serif; font-size:20px; font-style:normal; color:#999; text-align:left}
+.end {font-family:Verdana, Geneva, sans-serif; font-size:18px; color:#999; font-weight:normal; margin:10px 0; text-align:left}
+
+#mapa{float:left; margin:10px;}
+
+.redessociais {
+	
+}
