@@ -1,7 +1,7 @@
 
 # Antiquário. 
 
-Projeto realizado para uma cliente, toda a estrutura foi feita e montada conforme o solicitado.
+Projeto realizado em grupo para o curso de programador Web da Faetec.
 
 
 # Indíce  
@@ -17,7 +17,7 @@ Projeto feito com:
 HTML 5
 CSS 3
 Javascript
-JQuery
+
 
 
 
